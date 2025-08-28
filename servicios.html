@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - BaldeCash</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #eef2f7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    header {
+      background: #003366;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    header .logo img {
+      max-height: 50px;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Ajuste del submenú de redes */
+    .submenu-redes {
+      display: none;
+      position: absolute;
+      padding: 0.5rem;
+      list-style: none;
+      background: transparent !important;
+      border: none !important;
+    }
+
+    .contacto:hover .submenu-redes {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .submenu-redes li {
+      margin: 0;
+    }
+
+    .submenu-redes a {
+      text-decoration: none;
+    }
+
+    /* Sección servicios */
+    .servicios-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .servicio {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 2rem 1rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .servicio:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .servicio i {
+      font-size: 3rem;
+      color: #003366;
+      margin-bottom: 1rem;
+    }
+
+    .servicio h2 {
+      margin: 0.5rem 0;
+      font-size: 1.4rem;
+      color: #003366;
+    }
+
+    .servicio p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #003366;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo BaldeCash" />
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li class="contacto">
+          <a href="#" id="btn-contacto">Contacto</a>
+          <ul class="submenu-redes" id="submenu-redes">
+            <li><a href="mailto:correo@ejemplo.com" class="bola email"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://wa.me/51999999999" target="_blank" class="bola whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://facebook.com/" target="_blank" class="bola facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://instagram.com/" target="_blank" class="bola instagram"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="titulo">Servicio Baldecash</h1>
+
+  <!-- Contenido principal -->
+  <main>
+    <section class="servicios-container">
+      <div class="servicio">
+        <i class="fas fa-laptop"></i>
+        <h2>Venta de Tecnología</h2>
+        <p>Ofrecemos laptops, PC, televisores y accesorios con la mejor calidad y garantía.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-tools"></i>
+        <h2>Soporte Técnico</h2>
+        <p>Brindamos mantenimiento y reparación de equipos tecnológicos de manera rápida y segura.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-shipping-fast"></i>
+        <h2>Envíos Rápidos</h2>
+        <p>Entrega a domicilio en el menor tiempo posible, con cobertura en toda la ciudad.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BaldeCash - Todos los derechos reservados | <a href="index.html">Inicio</a></p>
+  </footer>
+
+  <script src="JavaScrip.js"></script>
+  <script>
+    const btnContacto = document.getElementById("btn-contacto");
+    const submenu = document.getElementById("submenu-redes");
+
+    if (btnContacto && submenu) {
+      btnContacto.addEventListener("click", function (e) {
+        e.preventDefault();
+        submenu.classList.toggle("show");
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!btnContacto.contains(e.target) && !submenu.contains(e.target)) {
+          submenu.classList.remove("show");
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

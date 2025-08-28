@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptops Disponibles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="estilos.css" />
+  
+</head>
+<body>
+  <!-- Header -->
+  <header>
+  <div class="logo">
+    <img src="logo.png" alt="Logo BaldeCash" />
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="ofertas.html">Ofertas</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li class="contacto">
+        <a href="#" id="btn-contacto">Contacto</a>
+        <ul class="submenu-redes" id="submenu-redes">
+  <li><a href="mailto:correo@ejemplo.com" class="bola email"><i class="fas fa-envelope"></i></a></li>
+      <li><a href="https://wa.me/51999999999" target="_blank" class="bola whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+      <li><a href="https://facebook.com/" target="_blank" class="bola facebook"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://instagram.com/" target="_blank" class="bola instagram"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Laptops -->
+  <section class="productos productos-recomendadas">
+    <h2>Laptops Disponibles</h2>
+    <div class="grid" id="resultados"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#">Términos</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Soporte</a>
+    </div>
+  </footer>
+  
+    <script src="JavaScrip.js"></script>
+  <script>
+    const btnContacto = document.getElementById("btn-contacto");
+    const submenu = document.getElementById("submenu-redes");
+
+    if (btnContacto && submenu) {
+      btnContacto.addEventListener("click", function (e) {
+        e.preventDefault();
+        submenu.classList.toggle("show");
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!btnContacto.contains(e.target) && !submenu.contains(e.target)) {
+          submenu.classList.remove("show");
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

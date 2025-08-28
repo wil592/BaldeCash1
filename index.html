@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BaldeCash Inspirado</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo BaldeCash" />
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li class="contacto">
+          <a href="#" id="btn-contacto">Contacto</a>
+      <ul class="submenu-redes" id="submenu-redes">
+        <li><a href="mailto:correo@ejemplo.com" class="bola email"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://wa.me/51999999999" target="_blank" class="bola whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="https://facebook.com/" target="_blank" class="bola facebook"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com/" target="_blank" class="bola instagram"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner principal -->
+  <section class="banner">
+    <img src="banner.jpg" alt="Banner principal" />
+  </section>
+
+  <!-- Sección de productos destacados -->
+  <section class="productos">
+    <h2>Productos Destacados</h2>
+    <div class="grid">
+      <div class="producto">
+        <img src="imagenes/producto1.jpg" alt="Producto 1" />
+        <h3>Nombre del producto</h3>
+        <p>Descripción breve</p>
+        <button>Ver más</button>
+      </div>
+      <div class="producto">
+        <img src="imagenes/producto2.jpg" alt="Producto 2" />
+        <h3>Nombre del producto</h3>
+        <p>Descripción breve</p>
+        <button>Ver más</button>
+      </div>
+      <div class="producto">
+        <img src="imagenes/producto3.jpg" alt="Producto 3" />
+        <h3>Nombre del producto</h3>
+        <p>Descripción breve</p>
+        <button>Ver más</button>
+      </div>
+      <div class="producto">
+        <img src="imagenes/producto4.jpg" alt="Producto 4" />
+        <h3>Nombre del producto</h3>
+        <p>Descripción breve</p>
+        <button>Ver más</button>
+      </div>
+      <div class="producto">
+        <img src="imagenes/producto5.jpg" alt="Producto 5" />
+        <h3>Nombre del producto</h3>
+        <p>Descripción breve</p>
+        <button>Ver más</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nueva función: recomendaciones -->
+  <main>
+    <section class="recomendaciones">
+      <h2>Encuentra la laptop ideal para ti</h2>
+      <p class="descripcion-recomendaciones">
+        Responde estas preguntas y te recomendaremos la mejor opción según tu uso, presupuesto y preferencias.
+      </p>
+      <div class="grid">
+        <div class="recuadro">
+          <h3>Uso principal</h3>
+          <p>¿Para qué la usarás?</p>
+          <select id="uso">
+            <option value="estudios">Estudios</option>
+            <option value="diseno">Diseño gráfico</option>
+            <option value="gaming">Gaming</option>
+            <option value="ofimatica">Ofimática</option>
+            <option value="programacion">Programación</option>
+          </select>
+        </div>
+        <div class="recuadro">
+          <h3>Presupuesto</h3>
+          <p>¿Cuánto planeas invertir?</p>
+          <select id="presupuesto">
+            <option value="1000-1500">S/1000 - S/1500</option>
+            <option value="1500-2500">S/1500 - S/2500</option>
+            <option value="2500-4000">S/2500 - S/4000</option>
+            <option value="4000+">Más de S/4000</option>
+          </select>
+        </div>
+        <div class="recuadro">
+          <h3>Carrera</h3>
+          <p>¿Qué estudias?</p>
+          <select id="carrera">
+            <option value="ingenieria">Ingeniería</option>
+            <option value="diseno">Diseño</option>
+            <option value="administracion">Administración</option>
+            <option value="arquitectura">Arquitectura</option>
+            <option value="otra">Otra</option>
+          </select>
+        </div>
+        <div class="recuadro">
+          <h3>Marca preferida</h3>
+          <p>¿Tienes alguna favorita?</p>
+          <select id="marca">
+            <option value="lenovo">Lenovo</option>
+            <option value="hp">HP</option>
+            <option value="dell">Dell</option>
+            <option value="asus">Asus</option>
+            <option value="cualquiera">No importa</option>
+          </select>
+        </div>
+        <div class="recuadro">
+          <h3>Pantalla</h3>
+          <p>Tamaño ideal</p>
+          <select id="pantalla">
+            <option value="13">13"</option>
+            <option value="14">14"</option>
+            <option value="15.6">15.6"</option>
+            <option value="17">17"</option>
+          </select>
+        </div>
+        <div class="recuadro">
+          <h3>RAM</h3>
+          <p>¿Cuánta memoria necesitas?</p>
+          <select id="ram">
+            <option value="4">4 GB</option>
+            <option value="8">8 GB</option>
+            <option value="16">16 GB</option>
+            <option value="32">32 GB</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="boton-recomendar">
+        <button id="recomendarBtn" class="btn-recomendar">Recomendar</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer ✅ ahora fuera del main -->
+  <footer>
+    <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#">Términos</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Soporte</a>
+    </div>
+  </footer>
+
+  <script src="JavaScrip.js"></script>
+  <script>
+    const btnContacto = document.getElementById("btn-contacto");
+    const submenu = document.getElementById("submenu-redes");
+
+    btnContacto.addEventListener("click", function (e) {
+      e.preventDefault();
+      submenu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!btnContacto.contains(e.target) && !submenu.contains(e.target)) {
+        submenu.classList.remove("show");
+      }
+    });
+  </script>
+</body>
+</html>
